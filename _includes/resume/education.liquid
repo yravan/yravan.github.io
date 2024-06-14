@@ -1,52 +1,63 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign education = data[1] | sort: 'startDate' | reverse %}
+  {% assign education = data[1] %}
   {% for content in education %}
-    <li class="list-group-item">
+    <li class="list-group-item" style="padding-left: 0rem; padding-right: 0rem;">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% if content.startDate and content.startDate != '' %}
-            {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
-            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' %}
-            {% assign date = date | append: endDate %}
-          {% else %}
-            {% assign date = null %}
-          {% endif %}
-          <table class="table-cv">
-            <tbody>
-              <tr>
-                <td>
-                  {% if date %}
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
-                  {% endif %}
-                </td>
-              </tr>
-              {% if content.location %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ content.location }}
-                    </p>
-                  </td>
-                </tr>
+        <div class="col-xs-10 col-sm-10 col-md-10" style="display: flex; flex-direction: column;">
+          <div>
+            <h6 class="title font-weight-bold" style="font-size: 1.2rem;">
+              <a href="{{ content.url }}">{{ content.institution }}</a>
+            </h6>
+            <h6 style="font-size: 0.95rem;">
+              {{ content.studyType }}
+              {% if content.gpa %}
+                ( <span style="font-style: italic;">{{ content.gpa }}</span> )
               {% endif %}
-            </tbody>
-          </table>
+            </h6>
+            <h6 style="font-size: 0.95rem; font-style: italic;">{{ content.area }}</h6>
+            <div class="row">
+              <ul class="list-unstyled" style="display: flex; flex-wrap: wrap; padding-left: 0.75rem;"> <!-- Adjust the padding-left as needed -->
+                {% for item in content.courses %}
+                  <li class="col-md-4" style="list-style-type: disc; list-style-position: inside;">
+                    <span class="item" style="font-size: 0.8rem; font-style: italic;">{{ item }}</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-0">
+            <div class="col-md-8">
+              {% if content.awards %}
+                <h6 style="font-size: 0.95rem; font-weight: bold;">Awards:</h6>
+                <ul class="list-unstyled" style="padding-left: 1.25rem;"> <!-- Adjust the padding-left as needed -->
+                  {% for award in content.awards %}
+                    <li>
+                      <span style="font-size: 0.8rem; font-style: italic; font-weight: bold;">{{ award }}</span>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+            <div class="col-md-4 text-left">
+              {% if content.satScore %}
+                <h6 style="font-size: 0.95rem; font-weight: bold; padding-left: 0.5rem;">SAT Score: {{ content.satScore }}</h6>
+              {% endif %}
+            </div>
+          </div>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ content.url }}">{{ content.studyType }}</a>
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.institution }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
-          <ul class="items">
-            {% for item in content.courses %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
+        <div class="col-xs-2 col-sm-2 col-md-2 text-left date-column">
+          {% if content.endDate and content.endDate != '' %}
+            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+            <span class="badge-container" style="justify-content: left;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-left" style="width: 90px; text-align: center;">{{ endDate }}</span>
+            </span>
+            {% if content.location %}
+              <p class="location mt-2">
+                <i class="fa-solid fa-location-dot iconlocation"></i>
+                {{ content.location }}
+              </p>
+            {% endif %}
+          {% endif %}
         </div>
       </div>
     </li>

@@ -26,7 +26,7 @@
       "studyType": "B. Sc. & M. Eng",
       "area": "Electrical Engineering and Computer Science",
       "endDate": "Jun 2025",
-      // "startDate": "Present",
+      "startDate": "Sep 2021",
       "gpa": "5.0/5.0",
       "courses": [
         "Computer Architecture", "Reinforcement Learning", "Controls",
@@ -45,11 +45,11 @@
       // "location": "Michigan, USA",
       "studyType": "High School Dual Enrollment",
       "area": "Mathematics",
-      // "startDate": "Jun 2021",
+      "startDate": "Sep 2017",
       "endDate": "Jun 2021",
       "gpa": "4.0/4.0",
       "courses": [
-        "Real Analysis",
+        "Real Analysis          ",
         "Linear Algebra",
         "Graph Theory",
         "Calculus",
@@ -59,8 +59,10 @@
     },
     {
       "institution": "Churchill High School",
+      "startDate": "Sep 2017",
       "endDate": "Jun 2021",
       // "location": "Michigan, USA",
+      "gpa": "4.0/4.0",
       "awards": [
         "Gold Medal at the International Chemistry Olympiad",
         "USA Math Olympiad 2-time Qualifier"
@@ -96,7 +98,7 @@
     },
     {
       "name": "MIT Media Lab",
-      "position": "Undergraduate Research Intern (Conformable Decoders Group)",
+      "position": "Embedded Research Intern (Conformable Decoders Group)",
       "startDate": "Oct 2022",
       "endDate": "May 2023",
       "highlights": [
@@ -111,8 +113,8 @@
       "startDate": "Jun 2020",
       "endDate": "Aug 2021",
       "highlights": [
-        "Implemented multiple C++ classes (3000+ lines) to simulate particle collisions in Linux. Analyzed statistics of 10 billion collisions",
-        "Self-taught C++, parallel computing, & Bash. Coordinated with team of 3 to integrate and deploy code in GitHub into larger project"
+        "Implemented C++ classes (3000+ lines) to simulate particle collisions in Linux. Analyzed statistics of 10 billion collisions",
+        "Self-taught C++, parallel computing, & Bash. Coordinated with team of 3 to integrate code in GitHub into larger project"
       ]
     },
     {
@@ -127,8 +129,18 @@
   ],
   "projects": [
     {
-      "name": "BeaverNav Web Application",
-      "startDate": "Jun 2022",
+      "name": "Advanced Sequence Modeling for Effective Credit Assignment in RL",
+      "startDate": "May 2024",
+      // "endDate": "Present",
+      "description": [
+        "Designed a 10000+ line web app for indoor navigation at MIT in Python. Designed software architecture & automated testing",
+        "Optimized novel image processing algorithms & optical character recognition algorithms to scrape text data from 300+ floor plans",
+        "Designed custom network graphs from floorplans. Gave an open talk at AI @ MIT club, & demonstrated navigation across campus."
+      ]
+    },
+    {
+      "name": "Pruning Neural Networks with Matrix Methods",
+      "startDate": "May 2024",
       "endDate": "Present",
       "description": [
         "Designed a 10000+ line web app for indoor navigation at MIT in Python. Designed software architecture & automated testing",
@@ -137,8 +149,28 @@
       ]
     },
     {
-      "name": "Tumor Image Classification",
-      "startDate": "Mar 2023",
+      "name": "BatterBot: A Case Study in Trajectory Optimization for Nonprehensile Manipulation",
+      "startDate": "Dec 2023",
+      "endDate": "Present",
+      "description": [
+        "Designed a 10000+ line web app for indoor navigation at MIT in Python. Designed software architecture & automated testing",
+        "Optimized novel image processing algorithms & optical character recognition algorithms to scrape text data from 300+ floor plans",
+        "Designed custom network graphs from floorplans. Gave an open talk at AI @ MIT club, & demonstrated navigation across campus."
+      ]
+    },
+    {
+      "name": "BeaverNav Web Application",
+      "startDate": "Jan 2022",
+      "endDate": "Present",
+      "description": [
+        "Designed a 10000+ line web app for indoor navigation at MIT in Python. Designed software architecture & automated testing",
+        "Optimized novel image processing algorithms & optical character recognition algorithms to scrape text data from 300+ floor plans",
+        "Designed custom network graphs from floorplans. Gave an open talk at AI @ MIT club, & demonstrated navigation across campus."
+      ]
+    },
+    {
+      "name": "Cartoon Face Recognition",
+      "startDate": "May 2023",
       "description": [
         "Designed deep CNN model in Pytorch for medical images, and optimized through data augmentation and rebalancing",
         "Experimented with loss function optimization & scheduling & transfer learning to achieve >93% accuracy"
@@ -147,7 +179,7 @@
     {
       "name": "RISC-V Computer Processor",
       "startDate": "Sep 2022",
-      "endDate": "Dec 2022",
+      // "endDate": "Dec 2022",
       "description": [
         "Designed a 4-stage processor with RISC-V architecture in Verilog",
         "Learned about digital logic, virtual memory, parallelization",

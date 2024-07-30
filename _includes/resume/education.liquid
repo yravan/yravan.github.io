@@ -8,7 +8,7 @@
             <div class="title-container" style="flex-grow: 1; display: flex; flex-direction: column;">
               <div class="title" style="display: flex; justify-content: space-between;">
                 <h6 class="font-weight-bold">
-                  <a href="{{ content.url }}" style="font-size: 1.2rem; /* Adjust size as needed */">{{ content.institution }}</a>
+                  <a href="{{ content.url }}" style="font-size: 1.2rem;">{{ content.institution }}</a>
                 </h6>
                 <div class="date-column" style="white-space: nowrap; margin-right: 1.4rem;">
                   {% if content.startDate %}
@@ -36,16 +36,23 @@
               {{ content.location }}
             </p>
           {% endif %}
-          
+
+          <!-- Collapse Button -->
+          <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapseCourses{{ forloop.index }}" aria-expanded="false" aria-controls="collapseCourses{{ forloop.index }}">
+            Show Courses
+          </button>
+
           <!-- Courses -->
-          <div class="row">
-            <ul class="items" style="margin-top: 0rem; padding-left: 1.5rem; list-style-type: disc; display: flex; flex-wrap: wrap; width: 100%;"> <!-- Adjust padding-left as needed -->
-              {% for item in content.courses %}
-                <li class="col-3" style="list-style-type: disc; list-style-position: inside; padding-left: 0;">
-                  <span class="item" style="font-size: 0.8rem; font-style: italic;">{{ item }}</span>
-                </li>
-              {% endfor %}
-            </ul>
+          <div id="collapseCourses{{ forloop.index }}" class="collapse">
+            <div class="row">
+              <ul class="items" style="margin-top: 0rem; padding-left: 1.5rem; list-style-type: disc; display: flex; flex-wrap: wrap; width: 100%;">
+                {% for item in content.courses %}
+                  <li class="col-3" style="list-style-type: disc; list-style-position: inside; padding-left: 0;">
+                    <span class="item" style="font-size: 0.8rem; font-style: italic;">{{ item }}</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
           </div>
 
           <!-- Awards and SAT Score -->
@@ -53,7 +60,7 @@
             <div class="col-md-9">
               {% if content.awards %}
                 <h6 style="font-size: 0.95rem; font-weight: bold; margin-top: 0rem;">Awards:</h6>
-                <ul class="list-unstyled" style="padding-left: 1.25rem; margin-top: 0rem;"> <!-- Adjust the padding-left as needed -->
+                <ul class="list-unstyled" style="padding-left: 1.25rem; margin-top: 0rem;">
                   {% for award in content.awards %}
                     <li>
                       <span style="font-size: 0.8rem; font-style: italic; font-weight: bold;">{{ award }}</span>

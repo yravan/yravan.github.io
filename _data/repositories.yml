@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - yravan
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - ayushzenith/PlugLess
+  - kw7243/BeaverNav 
+  - yravan/ComicVideofication
+  - cpruneau/WAC
+  - yravan/push-chair-diffusion

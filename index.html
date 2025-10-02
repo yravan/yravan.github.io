@@ -1,0 +1,415 @@
+---
+layout: single
+author_profile: true
+classes: wide
+---
+
+<style>
+/* Hide the entire header/masthead */
+.masthead {
+  display: none !important;
+}
+
+/* Move content up by removing top margin/padding */
+.page {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.page__content {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+}
+
+/* Make the author name huge */
+.author__name {
+  font-size: 2.4em !important;
+  font-weight: bold !important;
+  margin-bottom: 10px !important;
+}
+
+/* Profile image styling - show full image instead of circle */
+.author__avatar img {
+  border-radius: 8px !important;
+  width: 200px !important;
+  height: 120px !important;
+  object-fit: cover !important;
+  object-position: center 60% !important;
+  max-width: none !important;
+}
+
+.author__avatar {
+  display: block !important;
+  width: 200px !important;
+  height: 120px !important;
+}
+
+.author__content {
+  display: block !important;
+  vertical-align: top;
+}
+
+.research-project {
+  padding: 0;
+  margin: 20px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.research-project:first-of-type {
+  margin-top: 0px !important;
+}
+
+.research-project img {
+  flex-shrink: 0;
+  width: 140px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.research-content {
+  flex: 1;
+}
+
+.research-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+.research-title:hover {
+  text-decoration: underline;
+}
+
+.research-authors {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.research-venue {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.research-links {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.research-links a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.research-links a:hover {
+  text-decoration: underline;
+}
+
+.research-description {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.project-item {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.5;
+  display: flex;
+  gap: 15px;
+}
+
+.project-item img {
+  flex-shrink: 0;
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.project-links {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.project-links a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.resume-section {
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+
+.resume-section h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.resume-item {
+  margin-bottom: 6px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.resume-item .resume-details {
+  margin-left: 15px;
+}
+
+.resume-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.resume-organization {
+  font-style: italic;
+  color: #666;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.resume-details {
+  margin-top: 2px;
+  color: #555;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+</style>
+
+<p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px;">
+I'm a recent graduate of MIT, where I did my B.S. in Electrical Engineering and Computer Science ('25). I'm currently on leave from the M. Eng program. I worked with <a href="https://zt-yang.com/" style="color: #4a90e2; text-decoration: none;">Zhutian Yang</a>, <a href="https://people.csail.mit.edu/lpk/" style="color: #4a90e2; text-decoration: none;">Leslie Kaelbling</a>, <a href="https://people.csail.mit.edu/tlp/" style="color: #4a90e2; text-decoration: none;">Tomas Lozano-Perez</a>, <a href="https://www.episodeyang.com/" style="color: #4a90e2; text-decoration: none;">Ge Yang</a>, and <a href="https://web.mit.edu/phillipi/" style="color: #4a90e2; text-decoration: none;">Phillip Isola</a> at CSAIL on hierarchical long-horizon manipulation and learning from virtual demonstrations. I'm interested in a wide variety of robot learning: long-horizon mobile manipulation, synthetic data, theory, etc. I'm currently applying for PhD's in robotics. In my free time, I enjoy playing tennis, lifting, and sailing.
+</p>
+
+<h2>Research</h2>
+<div class="research-project" style="margin-top: 0px !important;">
+  <img src="/assets/images/lucidxr.png" alt="Lucid-XR">
+  <div class="research-content">
+    <a href="https://lucidxr.github.io/" class="research-title">Lucid-XR: An Extended-Reality Data Engine for Robotic Manipulation</a>
+    <div class="research-authors">
+      <strong>Yajvan Ravan</strong>*, <a href="https://adamrashid96.github.io/">Adam Rashid</a>*, <a href="https://alany1.github.io/">Alan Yu</a>, <a href="https://www.kaimcclennen.com/">Kai McClennen</a>, <a href="https://www.linkedin.com/in/gio-huh-789188374/">Gio Huh</a>, <a href="https://kvnyng.com/">Kevin Yang</a>, <a href="https://zt-yang.com/">Zhutian Yang</a>, <a href="https://qinxiyu.github.io/">Qinxi Yu</a>, <a href="https://xiaolonw.github.io/">Xiaolong Wang</a>, <a href="https://web.mit.edu/phillipi/">Phillip Isola</a><sup>+</sup>, <a href="https://www.episodeyang.com/">Ge Yang</a>*<sup>+</sup>
+    </div>
+    <div class="research-venue">Conference on Robot Learning (CoRL), 2025</div>
+    <div class="research-links">
+      <a href="https://lucidxr.github.io/">project page</a> / <a href="https://lucidxr.github.io/assets/paper.pdf">paper</a> / <a href="https://lucidxr.github.io/#spotlight-video">video</a>
+    </div>
+    <div class="research-description">
+      We build an intuitive VR data collection interface in simulation for imitation learning, producing visual policies from synthetic data that generalize to real-world scenes and amplify data collection capacity 20x.
+    </div>
+  </div>
+</div>
+
+<div class="research-project">
+  <img src="/assets/images/popi.jpg" alt="PoPi">
+  <div class="research-content">
+    <a href="https://yravan.github.io/plannerorderedpolicy/" class="research-title">PoPi: Combining Planning and Diffusion for Mobility with Unknown Dynamics</a>
+    <div class="research-authors">
+      <strong>Yajvan Ravan</strong>, <a href="https://zt-yang.com/">Zhutian Yang</a>, <a href="https://taochenshh.github.io/">Tao Chen</a>, <a href="https://people.csail.mit.edu/tlp/">Tomás Lozano-Pérez</a>, <a href="https://people.csail.mit.edu/lpk/">Leslie Kaelbling</a>
+    </div>
+    <div class="research-venue">arXiv preprint</div>
+    <div class="research-links">
+      <a href="https://yravan.github.io/plannerorderedpolicy/">project page</a> / <a href="https://arxiv.org/abs/2410.06911">arXiv</a>
+    </div>
+    <div class="research-description">
+      Planner-Ordered Policy (PoPi) is an approach for long-horizon robot manipulation problems in which the dynamics are partially unknown, for example, pushing and pulling a 5-wheeled office chair.
+    </div>
+  </div>
+</div>
+
+<div class="research-project">
+  <img src="/assets/images/lucidsim.png" alt="LucidSim">
+  <div class="research-content">
+    <a href="https://lucidsim.github.io/" class="research-title">LucidSim: Learning Visual Parkour from Generated Images</a>
+    <div class="research-authors">
+      <a href="https://alany1.github.io/">Alan Yu</a>*, <a href="https://www.episodeyang.com/">Ge Yang</a>*, <a href="https://www.linkedin.com/in/ran-choi-tmr/?locale=en">Ran Choi</a>, <strong>Yajvan Ravan</strong>, <a href="https://marinerobotics.mit.edu/">John Leonard</a>, <a href="https://web.mit.edu/phillipi/">Phillip Isola</a>
+    </div>
+    <div class="research-venue">Conference on Robot Learning (CoRL), 2024</div>
+    <div class="research-links">
+      <a href="https://lucidsim.github.io/">website</a> / <a href="#">arXiv</a> / <a href="#">code</a> / <a href="#">video</a> / <a href="#">news video</a> / <a href="#">news</a>
+    </div>
+    <div class="research-description">
+      We use generative models as a realistic and diverse data source by augmenting classical physics simulators. We demonstrate that robots trained this way can accomplish highly dynamic tasks like parkour without requiring depth.
+    </div>
+  </div>
+</div>
+
+<div class="research-project">
+  <img src="/assets/images/nasa.png" alt="NASA Wildfire">
+  <div class="research-content">
+    <a href="#" class="research-title">Real-Time Wildfire Localization on the NASA Autonomous Modular Sensor using Deep Learning</a>
+    <div class="research-authors">
+      <strong>Yajvan Ravan</strong>, Aref Malek, Chester Dolph, Nikhil Behari
+    </div>
+    <div class="research-venue">AIAA SciTech 2026</div>
+    <div class="research-links">
+      <a href="#">paper</a> / <a href="#">dataset</a>
+    </div>
+    <div class="research-description">
+      Real-time wildfire detection using multi-spectral NASA imagery. Deep learning model achieves 94.68% accuracy and 84.96% IoU for automated localization through clouds and at night.
+    </div>
+  </div>
+</div>
+
+<h2>Small Projects</h2>
+
+<div class="project-item">
+  <img src="/assets/images/beavernav.jpg" alt="BeaverNav">
+  <div class="project-content">
+    <div class="project-title">BeaverNav</div>
+    <div>Indoor navigation system for MIT's campus enabling users to navigate between rooms with routes from start to end destination. Built using computer vision, graph algorithms, and A* path planning.</div>
+    <div class="project-links">
+      <a href="https://github.com/kw7243/BeaverNav">GitHub</a> / <a href="/assets/beaver_nav/demo_vid.mov">Demo</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-item">
+  <img src="/assets/images/batterbot.jpg" alt="BatterBot">
+  <div class="project-content">
+    <div class="project-title">BatterBot</div>
+    <div>Robotic system for playing baseball using trajectory optimization, inverse kinematics, and kinematic trajectory optimization. Demonstrates nonprehensile manipulation for dynamic aerial objects.</div>
+    <div class="project-links">
+      <a href="https://github.com/yravan/batterbot">GitHub</a> / <a href="https://www.youtube.com/watch?v=wL9x-VHt-TI&t=1s">Video</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-item">
+  <img src="/assets/images/neuralnetwork.jpg" alt="Neural Network Pruning">
+  <div class="project-content">
+    <div class="project-title">Neural Network Pruning with Matrix Methods</div>
+    <div>Reducing redundant parameters in neural networks using linear algebra techniques including PCA, low-rank approximation, and randomized methods to improve inference time and computational efficiency.</div>
+    <div class="project-links">
+      <a href="https://github.com/yravan/neural_network_pruning">GitHub</a> / <a href="/assets/18065/icml2024-2.pdf">Report</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-item">
+  <div class="project-content">
+    <div class="project-title">MIT Script</div>
+    <div>Project description coming soon.</div>
+    <div class="project-links">
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-item">
+  <div class="project-content">
+    <div class="project-title">PGIF with Mamba & S3</div>
+    <div>Project description coming soon.</div>
+    <div class="project-links">
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<h2>Resume</h2>
+
+<div class="resume-section">
+  <h3>Education</h3>
+  <div class="resume-item">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div class="resume-title">Massachusetts Institute of Technology (MIT)</div>
+        <div class="resume-organization">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>M.Eng in Electrical Engineering and Computer Science</div>
+            <div style="font-size: 16px; color: #666; margin-left: 20px;">(on-leave)</div>
+          </div>
+          <div>B.Sc. in Electrical Engineering and Computer Science</div>
+        </div>
+      </div>
+      <div style="font-size: 16px; color: #666;">Sep 2021 - Jun 2025</div>
+    </div>
+    <div class="resume-details">GPA: 5.0/5.0</div>
+    <details style="margin-top: 8px;">
+      <summary style="cursor: pointer; font-size: 16px; color: #4a90e2;">View Coursework</summary>
+      <div style="margin-top: 8px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; font-size: 14px; color: #555;">
+        <div>Computer Architecture</div>
+        <div>Reinforcement Learning</div>
+        <div>Controls</div>
+        <div>Algorithms</div>
+        <div>Computer Vision</div>
+        <div>Reasoning/Inference in AI</div>
+        <div>Statistical Inference</div>
+        <div>Machine Learning</div>
+        <div>Robotic Manipulation</div>
+      </div>
+    </details>
+  </div>
+</div>
+
+<div class="resume-section">
+  <h3>Internships</h3>
+  <div class="resume-item">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="resume-title"><a href="https://www.csail.mit.edu/" style="color: #4a90e2; text-decoration: none;">MIT CS & AI Lab</a> (Robotics Research)</div>
+      <div style="font-size: 16px; color: #666;">Aug 2023 - Present</div>
+    </div>
+    <div class="resume-details">
+      <em>UROP in <a href="https://lis.csail.mit.edu/" style="color: #4a90e2; text-decoration: none;">Learning and Intelligent Systems Group</a></em><br>
+      <em>UROP in <a href="https://web.mit.edu/phillipi/" style="color: #4a90e2; text-decoration: none;">Isola Lab</a></em>
+    </div>
+  </div>
+
+  <div class="resume-item">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="resume-title">NASA</div>
+      <div style="font-size: 16px; color: #666;">Jun 2023 - Dec 2023</div>
+    </div>
+    <div class="resume-organization">Computer Vision Research Intern</div>
+  </div>
+
+  <div class="resume-item">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="resume-title">MIT Media Lab</div>
+      <div style="font-size: 16px; color: #666;">Oct 2022 - May 2023</div>
+    </div>
+    <div class="resume-organization">UROP in <a href="https://conformabledecoders.media.mit.edu/" style="color: #4a90e2; text-decoration: none;">Conformable Decoders</a></div>
+    <div class="resume-details">
+      • Worked on wearable eye-tracking sensors using micro piezoelectrics with CC2460 microcontroller
+    </div>
+  </div>
+</div>
+
+<div class="resume-section">
+  <h3>Awards</h3>
+  <div class="resume-item">
+    <div class="resume-title">Gold Medal at International Chemistry Olympiad (IChO) (2021)</div>
+  </div>
+
+  <div class="resume-item">
+    <div class="resume-title">USA Math Olympiad 2-time Qualifier (2020-2021)</div>
+  </div>
+</div>

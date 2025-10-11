@@ -119,6 +119,12 @@ author:
   location         : "Cambridge, MA"
   email            : "yajvanravan@gmail.com"
   links:
+    - label: "CV"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/YajvanRavan_CV.pdf"
+    - label: "Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/YajvanRavan_Resume.pdf"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:yajvanravan@gmail.com"

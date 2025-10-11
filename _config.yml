@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "Yajvan Ravan"
   avatar           : "/assets/images/DSC04931.jpg"
-  bio              : "Aspiring researcher"
-  location         : "Cambridge, MA"
+  bio              : "curious guy"
+  location         :
   email            : "yajvanravan@gmail.com"
   links:
     - label: "CV"

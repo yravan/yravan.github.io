@@ -119,9 +119,6 @@ author:
   location         :
   email            : "yajvanravan@gmail.com"
   links:
-    - label: "CV"
-      icon: "fas fa-fw fa-file-pdf"
-      url: "/assets/YajvanRavan_CV.pdf"
     - label: "Resume"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/YajvanRavan_Resume.pdf"
